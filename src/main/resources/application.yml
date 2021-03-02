@@ -1,0 +1,22 @@
+spring:
+    datasource:
+        yangguang:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            jdbc-url: jdbc:mysql://127.0.0.1:3306/yangguang_9?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai
+            username: root
+            password: root
+            hikari:
+              minimumIdle: 2 #最小空闲连接数量
+              maximumPoolSize: 10 #池中最大连接数，包括闲置和使用中的连接
+        hezhong:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            jdbc-url: jdbc:mysql://127.0.0.1:3306/hezhong_54?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai
+            username: root
+            password: root
+            hikari:
+              minimumIdle: 2 #最小空闲连接数量
+              maximumPoolSize: 10 #池中最大连接数，包括闲置和使用中的连接
+    jpa:
+        databasePlatform: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8000
