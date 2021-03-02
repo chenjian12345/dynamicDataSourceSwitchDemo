@@ -1,0 +1,2 @@
+# dynamicDataSourceSwitchDemo
+springboot根据参数动态切换数据源，注：无法实现跨数据源事务维护
